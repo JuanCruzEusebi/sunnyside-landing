@@ -5,4 +5,4 @@ The challenge consists of making a landing page. Im provided with .jpg files to 
 
 Progress to last commit: 
 
-![sunnyside](https://user-images.githubusercontent.com/69488523/220810598-846864b8-3f26-4c48-89d2-f32586ad4849.JPG 200)
+![sunnyside](https://user-images.githubusercontent.com/69488523/220810598-846864b8-3f26-4c48-89d2-f32586ad4849.JPG)
