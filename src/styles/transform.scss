@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import '../index.scss';
+
+
+.trsf-main-container {
+    display: flex;
+    height: 75vh;
+    width: 100%;
+    flex-direction: row; /* new */
+}
+
+.trsf-text {
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    // padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+        h1 {
+            font-family: 'Fraunces';
+            color:hsl(212, 27%, 19%);
+            font-weight: 700;
+            font-size: 2.7em;
+            text-align: left;
+            margin: 0px 90px 0px 90px;
+        }
+        p {
+            font-family: 'Barlow', sans-serif;
+            font-size: 1.2em;
+            color: $primary-darkBlue;
+            font-weight: 600;
+            letter-spacing: 1px;
+            opacity: 0.8;
+            margin: 0px 90px 0px 90px;
+            line-height: 2rem;
+            text-align: left;
+        }
+        a {
+            font-family: 'Fraunces';
+            color:hsl(212, 27%, 19%);
+            font-size: 1.2em;
+            text-decoration: underline yellow;
+            text-align: left;
+            margin: 0px 90px 0px 90px;
+        }
+}
+
+.p-midscreen {
+    display: none;
+}
+
+
+.trsf-img{
+    height: auto;
+    background-image: url($trsf-img);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+
+@media (max-width: 1100px) {
+    .p-fullscreen {
+        display: none;
+    }
+    .p-midscreen {
+        display: block;
+    }
+    .trsf-text {
+        h1{
+            margin: 0px 70px 0px 40px;
+        }
+        p {
+            margin: 0px 70px 0px 40px;
+        }
+        a{
+            margin: 0px 70px 0px 40px;            
+        }
+    }
+
+}
+@media (max-width: 821px) {
+    .trsf-text {
+        h1{
+            margin: 0px 70px 0px 40px;
+        }
+        p {
+            margin: 0px 70px 0px 40px;
+        }
+        a{
+            margin: 0px 70px 0px 40px;            
+        }
+    }
+    .trsf-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .trsf-main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 75vh;
+    }
+}
